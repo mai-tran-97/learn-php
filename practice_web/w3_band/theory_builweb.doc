@@ -1,0 +1,27 @@
+1. Phân tích
+2. Dựng base
+3. Xậy dựng từng phần theo phân tích
+4. Hoàn thiện
+
+CÁC THÀNH PHẦN THƯỜNG GẶP TRÊN GIAO DIỆN
+1. Header
+2. Navigation (Điều hướng của trang, nới chưa các nút để dẫn đến các trang khác)
+3. Breadcrumb (Hướng cho các bạn biết rằng các bạn đang ở đâu)
+4. Sidebar (1 thanh được đặt ở 1 phía của màn hình)
+5. Banner (ảnh quảng cáo)
+6. Slider (1 màn hình trình diễn các nội dung dạng di chuyển)
+7. content (nội dung chính của web)
+8. Footer (chân trang)
+
+PHÂN TÍCH WEB MẪU (One page)
+https://www.w3schools.com/w3css/tryw3css_templates_band.htm
+I. Phân tích
+1. Header
+2. Navigation
+3. Slider
+4. content
+    1. About
+    2. Tour
+    3. Contact
+    4. Image
+5. Footer
