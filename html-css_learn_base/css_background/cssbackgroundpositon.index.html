@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>background-positon: vị trí của background</title>
+        <meta charset="utf-8">
+        <style>
+            html, body {
+                margin: 0;
+            }
+            .header {
+                width: 500px;
+                height: 500px;
+                border: 10px solid green;
+                padding: 40px;
+                box-sizing: border-box;
+                background-image: url(https://photo-cms-anninhthudo.zadn.vn/w660/Uploaded/2022/wopkplw/2021_01_25/son-5660.jpg);
+                background-repeat: no-repeat;
+                background-size: 300px;
+                background-color: black;
+                background-clip: padding-box;
+                background-position: top 50px right 20px;
+                /* background-position: top right - trên bên phải; bottom center - dưới ở giữa; 
+                - nếu để 1 giá trị thì nó sẽ tự hiểu giá trị thứ 2 là center ví dụ top = top center
+                - Tương tự với giá trị tương đối/tuyệt đối ví dụ 50px = cách mép trái 50px và ở giữa
+                - top 50px right 100px = top + 50px và right + 100px (sử dụng được số âm)
+                - 30px 50px trên thẻ sẽ có 2 trục x và y có gốc toạ độ năm ở góc trên bên trái
+                */
+            }
+        </style>     
+    </head>
+    <body>
+        <div class="header"></div>
+    </body>
+</html>

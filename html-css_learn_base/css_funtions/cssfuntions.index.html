@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Funtion - Hàm trong CSS</title>
+        <style>
+            .box {
+                width: calc(50% + 20px);
+                height: 120px;
+                background: rgb(155, 22, 22);
+                transition: width 0.5s;
+                transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+            }
+            .box:hover {
+                width: 100%;
+            }
+            a::after {
+                content: "(" attr(href) ")";
+            }
+            .box::after {
+                content: attr(data-title);
+            }
+            body {
+            counter-reset: Funtion;
+            }
+            li::before {
+            counter-increment: Funtion;
+            content: "Funtion " counter(Funtion) ": ";
+            }
+            .box2 {
+                width: max(70%, 100px);
+                height: 50px;
+                background-color: yellowgreen;
+            }
+            .box3 {
+                width: min(10%, 300px);
+                height: 50px;
+                background-color: rgb(36, 52, 4);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box" data-title="Xin chào các bạn" title="hay ho"></div>
+        <a href="https://fullstack.edu.vn/">click vào để học</a>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <h1>Hàm trong CSS</h1>
+        <ul>
+            <!-- Đặt biến cho màu variable -->
+            <li>var()</li>
+            <!--  -->
+            <li>linear-gradient()</li>
+            <!-- Màu có thể nhìn xuyên -->
+            <li>rgba()</li>
+            <!-- Màu đặc -->
+            <li>rgb()</li>
+            <!-- Tính toán giá trị -->
+            <li>calc()</li>
+            <!-- Thuộc tính hiển thị theo các trường đã có -->
+            <li>attr()</li>
+            <!-- Hàm conic-gradient () đặt một gradient conic làm hình nền.
+Gradient conic là một gradient với các chuyển đổi màu được quay xung quanh một điểm trung tâm.
+Để tạo một gradient hình nón, bạn phải xác định ít nhất hai điểm dừng màu (bao nhiêu màu cũng được) -->
+            <li>conic-gradient()</li>
+            <!-- Tạo 1 bộ đếm -->
+            <li>counter()</li>
+            <!-- Hàm khối-bezier () xác định một đường cong Bezier khối.
+Đường cong Bezier khối được xác định bởi bốn điểm P0, P1, P2 và P3. P0 và P3 là điểm bắt đầu và điểm kết thúc của đường cong và trong CSS, 
+các điểm này được cố định vì tọa độ là tỷ lệ. P0 là (0, 0) và đại diện cho thời điểm ban đầu và trạng thái ban đầu, P3 là (1, 1)
+và đại diện cho thời gian cuối cùng và trạng thái cuối cùng.
+Hàm khối-bezier () có thể được sử dụng với thuộc tính animation-timing-function và thuộc tính chuyển đổi-thời gian-chức năng .  -->
+            <li>cubic-bezier()</li>
+            <!-- HSL là viết tắt của màu sắc, độ bão hòa và độ đậm nhạt - và thể hiện sự thể hiện tọa độ hình trụ của màu sắc. -->
+            <li>hsl()</li>
+            <!-- Giá trị màu HSLA là phần mở rộng của các giá trị màu HSL với kênh alpha - chỉ định độ mờ của màu. -->
+            <li>hsla()</li>
+            <!-- Hàm max () sử dụng giá trị lớn nhất, từ danh sách giá trị được phân tách bằng dấu phẩy, làm giá trị thuộc tính -->
+            <li>max()</li>
+             <!-- Hàm min () sử dụng giá trị nhỏ nhất, từ danh sách giá trị được phân tách bằng dấu phẩy, làm giá trị thuộc tính -->
+            <li>min()</li>
+            <li>radial-gradient()</li>
+            <li>repeating-conic-gradient()</li>
+            <li>repeating-linear-gradient()</li>
+            <li>repeating-radial-gradient()</li>
+        </ul>
+    </body>
+</html>

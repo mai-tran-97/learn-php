@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Border - lớp vỏ/lớp viền ở ngoài cùng ôm element </title>
+        <style>
+            .box {
+                width: 80px;
+                height: 80px;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .box1 {
+                background-color: black;
+            }
+            .box2 {
+                background-color: green;
+                /* border-top-width: 10px;
+                border-left-width: 0;
+                border-right-width: 0;
+                border-bottom-width: 0; */
+                /* Viết tắt */
+                /* border-width: 10px;
+                border-color: blue;
+                border-style: solid; */
+                /* Solid mặc định = 2px */
+                /* viết tắt */
+                border: 20px solid black;
+
+            }
+            .box3 {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box box1">BOX 1</div>
+        <div class="box box2">BOX 2</div>
+        <div class="box box3">BOX 3</div>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fallback image - hiển thị ảnh dự phòng khi ảnh chính lỗi</title>
+        <style>
+            .box1 {
+                height: 400px;
+                width: 400px;
+            }
+            .box2 {
+                height: 400px;
+                width: 100%;
+                background: url('https://tunglocpet.555com/wp-content/uploads/2021/03/cho-bulldog-thong-tin-thumb.jpg') no-repeat 100%,
+                url('placeholder-image.png')
+                ; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">
+            <img onerror="this.src='placeholder-image.png'" src="https://tunglocpet.555com/wp-content/uploads/2021/03/cho-bulldog-thong-tin-thumb.jpg">
+        </div>
+        <div class="box2"></div>
+    </body>
+</html>

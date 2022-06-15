@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>background-image</title>
+        <style>
+            html, body {
+                margin: 0;
+            }
+            .header {
+                width: 100%;
+                height: 100vh;
+                background-image:
+                /* inear-gradient - tạo ra 1 dải màu chuyển đều đặn 
+                "(hướng xoay 0-230 độ, màu đầu tiên của dải màu chuyển,..,..., màu cuối của dải màu chuyển" */
+                linear-gradient(0, rgba(100, 0, 0, 0.5), rgba(0, 100, 0, 0.5), rgba(0, 0, 100, 0.5)),
+                url(https://www.onlygfx.com/wp-content/uploads/2019/06/6-heart-pattern-1.png), 
+                url(https://static.boredpanda.com/blog/wp-content/uploads/2016/07/cute-bulldog-smiling-sleeping-dog-narcoleptic-frenchiebutt-millo-2.jpg);
+                /* background có tính repeat (tính năng) */
+                background-repeat: repeat;
+                /* background-repeat: repeat-x = theo trục x; repeat-y = theo trục y,...  */
+                /* background-size: 500px; */
+                /* Một số thuộc tính của background-size */
+                background-size: contain;
+                /* contain - giúp bức ảnh được nguyên vẹn không bị mất 1 phần hình ảnh nào => Có khoảng trống trên màn hình
+                cover - không cho phét có khoảng trống trên trình duyệt => Bức ảnh sẽ bị mất 1 phần
+                */
+            } 
+        </style>
+    </head>
+    <body>
+        <div class="header"></div>
+    </body>
+</html>

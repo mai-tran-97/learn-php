@@ -1,0 +1,12 @@
+/* Max-with: Câu lệnh áp dụng cho trường hợp độ rộng MH <1240px (giới hạn cao nhất có app dụng)
+Min-with: Câu lệnh áp dụng cho trường hợp độ rộng MH >1240px (giới hạn thấp nhất có app dụng)
+*/ 
+@media only screen and (max-width: 1204px) {
+    h1 {
+        color: tomato;
+    }
+}
+
+h2 {
+    color: red;
+}

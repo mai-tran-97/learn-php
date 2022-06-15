@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Row</title>
+    <link rel="stylesheet" href="row.css">
+    <style>
+        body {
+            margin: 0;
+        }
+        .color {
+            background-color: orange;
+            text-align: center;
+        }
+        h1 {
+            padding: 100px 0;
+            font-size: 50px;
+            margin: 0;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Vai trò
+    1. Chứa các column, giúp các column đứng theo chiều ngang
+    2. Khi tổng chiều ngang column vượt quá kích thước row, cho column xuống hàng
+    3. Loại bỏ khoảng thừa do gutter tạo ra ở 2 phía
+    -->
+    <div class="grid wide color">
+        <div class="row">
+            <h1>Column 1</h1>
+            <h1>Column 2</h1>
+            <h1>Column 3</h1>
+        </div>
+    </div>
+</body>
+</html>

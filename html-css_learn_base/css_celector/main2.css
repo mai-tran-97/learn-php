@@ -1,0 +1,29 @@
+h1{color: blue;}
+/* mức độ chi tiết càng cao mức độ ưu tiên càng cao */
+h2#id2.class2{
+    color: deeppink;
+}
+#id2.class2{
+    color: aqua;
+}
+/* Equal specificity = Mức độ ưu tiên khi gọi tới 1 element selector giống nhau */
+#id2{
+    color: brown;
+}
+#id2{
+    color: gray;
+}
+/* với 2 lệnh giống y hệt nhau cho cùng 1 element thì lệnh nào mới hơn sẽ được ưu tiên */
+.class2{
+    color: rgb(255, 145, 0);
+}
+h2{
+    color: red;
+}
+/* Muốn ưu tiên sử nhất sử dụng !important, nếu có nhiều important, thì lại xét các trường hợp khác */
+li{
+    color: red !important; 
+}
+li{
+    color: blue;
+}

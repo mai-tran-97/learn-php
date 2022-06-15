@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>html lớp giả</title>
+        <style>
+            .box {
+                width: 50%;
+                height: 100px;
+                background: rgb(0, 2, 200);
+            }
+            h1:hover {
+                color: red;
+                font-size:100px;
+            }
+            .box:active {
+                background-color: green
+            }
+            li:first-child {
+                color: red;
+                font-size: 40px;
+            }
+            li:last-child {
+                color: brown;
+                font-size: 10px;
+            }
+            input:checked {
+                width: 50px;
+                height: 50px;
+            }
+            input[type=text]:enabled {
+                background: aquamarine;
+            }
+            input[type=text]:disabled {
+                background: black;
+            }
+            p:empty {
+                width: 10px;
+                height: 20px;
+                background: gray;
+            }
+            p:first-of-type {
+                width: 100px;
+            }
+            p:last-of-type {
+                color: coral;
+            }
+            input[type=text]:focus {
+                background-color: plum;
+            }
+            input[type=number]:in-range {
+                border: 5px solid green;
+            }
+            input[type=number]:out-of-range {
+                border: 5px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+        <h1>CSS pseudo - class - lớp giải</h1>
+        <form action="">
+            <h2>GU NGƯỜI YÊU CỦA BẠN</h1>
+            <input type="radio" name="gender" value="RICK"> RICK BUT BAD  <br>
+            <input type="radio" name="gender" value="POOR"> POOR BUT GOOD <br>
+            <h2>BẠN THÍCH NUÔI CON VẬT NÀO</h1>
+            <input type="checkbox"> I LIKE DOG <br>
+            <input type="checkbox"> I LIKE CAT
+        </form>
+        <form action="">
+            <h2>SỐ ĐO 3 VÒNG</h2>
+            VÒNG 1 <input type="text"> <br>
+            VÒNG 2 <input type="text"> <br>
+            VÒNG 3 <input type="text" disabled="" value="120" style="color: white">
+        </form>
+        <p></p>
+        <p>1...........</p>
+        <p>123..........</p>
+        <h3>LỰA CHỌN SỐ BÁT CỚM</h3>
+        <input type="number" min="1" max="10">
+        <ul>
+            <!-- Tham chiếu đến chính phần tử gốc của file html -->
+            <li>:root</li>
+            <!-- Thuộc tính đưỢc kích hoạt khi di chuột vào -->
+            <li>:hover</li>
+            <!-- Thuộc tính đưỢc kích hoạt khi bấm dữ chuột -->
+            <li>:active</li>
+            <!-- Thay đổi thuộc tính của tập hợp thẻ con -->
+            <li>:first-child</li>
+            <li>:last-child</li>
+            <!-- Tạo tiêu điểm/tác đông vào phần tử được coi là tiêu điểm -->
+            <li>:focus</li>
+            <!-- được sử dụng để chọn các phần tử có thuộc tính ngôn ngữ với giá trị được chỉ định.
+                Lưu ý: Giá trị thuộc tính lang thường là mã ngôn ngữ gồm hai chữ cái, 
+                như lang = "fr" (đối với tiếng Pháp) hoặc hai mã ngôn ngữ được kết hợp, như lang = "fr-ca" (đối với tiếng Pháp thuộc Canada). -->
+            <li>:lang(language)</li>
+            <!-- Bộ :checkedchọn khớp với mọi phần tử <input> đã chọn (chỉ dành cho các nút radio và hộp kiểm) và phần tử <option>. -->
+            <li>:checked</li>
+            <!-- Bộ :disabledchọn khớp với mọi phần tử bị vô hiệu hóa (chủ yếu được sử dụng trên các phần tử biểu mẫu). -->
+            <li>:disabled</li>
+            <!-- Bộ :enabledchọn khớp với mọi phần tử đã bật (chủ yếu được sử dụng trên các phần tử biểu mẫu). -->
+            <li>:enabled</li>
+            <!-- Bộ :emptychọn khớp với mọi phần tử không có phần tử con (thẻ trống) (bao gồm cả các nút văn bản). -->
+            <li>:empty</li>
+            <!-- Thay đổi thuộc tính của 1 thẻ đầu hoặc cuối trong tập hợp thẻ cũng loại -->
+            <li>:first-of-type</li>
+            <li>:last-of-type</li>
+            <!-- chọn tất cả các phần tử có giá trị nằm trong một phạm vi xác định.
+                Bộ chọn: trong phạm vi chỉ hoạt động cho các phần tử đầu vào có thuộc tính tối thiểu và / hoặc tối đa!
+                Sử dụng bộ chọn : out-of-range để chọn tất cả các phần tử có giá trị nằm ngoài một phạm vi được chỉ định. -->
+            <li>:in-range</li>
+            <li>:out-of-range</li>
+            <!-- Giá trị không hợp lệ tương tự in-range -->
+            <li>:invalid</li>
+            <!-- Gái trị trị hợp lệ tương tự out-of-range -->
+            <li>:valid</li>
+            <!-- Khớp với các phần tử link chứa được truy cập/chưa được click -->
+            <li>:link</li>
+            <!-- Khớp với các phần tử link đã được truy cập/đã được click -->
+            <li>:visited</li>
+            <!-- Khớp với tất cá các phầN tử ngoài phần tử trong "()" -->
+            <li>:not(selector)</li>
+            <!-- Khớp với phần tử con thứ "(n)" từ trên xuống -->
+            <li>:nth-child(n)</li>
+            <!-- Khớp với phần tử con thứ "(n)" từ dưới lên -->
+            <li>:nth-last-child(n)</li>
+            <!-- Thay đổi thuộc tính của thẻ thứ "(n)" từ trên xuống hoặc từ dưới lên trong tập hợp thẻ cũng loại -->
+            <li>:nth-last-of-type(n)</li>
+            <li>:nth-of-type(n)</li>
+            <!-- pseudo-classes này sẽ chỉ quét những element nào chỉ xuất hiện đúng 1 lần. 
+                Còn nếu xuất hiện từ 2 lần trở nên sẽ không tác dụng -->
+            <li>:only-of-type</li>
+            <!-- Chọn mỗi phần tử là con duy nhất của parent của nó -->
+            <li>:only-child</li>
+            <!-- Chọn các thẻ không có thuộc tính “required” -->
+            <li>:optional</li>
+            <!-- Chọn các thẻ với thuộc tính “readonly” được chỉ định -->
+            <li>:read-only</li>
+            <!-- Chọn các thẻ mà không có thuộc tính “readonly” -->
+            <li>:read-write</li>
+            <!-- Chọn phần tử với thuộc tính “required” được chỉ định -->
+            <li>:required</li>
+            <!-- :target sẽ styles cho các phần tử được chọn 
+                nếu atttribute id của nó khớp với atttribute href của phẩn tử html a khi người dùng click vào phần tử a -->
+            <li>:target</li>
+        </ul>
+    </body>
+</html>

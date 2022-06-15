@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ĐƠN VỊ CSS</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main4.css">
+        <style>
+            /* .box{
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+            } */
+            html{
+                font-size: 40px;
+            }
+            /* .box{
+                width: 50%;
+                height: 100px;
+                background-color: blue;
+            } */
+            .box{
+                width: 50vw;
+                height: 100vh;
+                background-color: blue;
+            } 
+            h2{
+                color: brown;
+                font-size: 20px;
+            }
+            /* h1{
+                font-size: 1rem;
+            } */
+            h1{
+                font-size: 1em;
+            }
+    
+    /* margin: 0; /* Loại bỏ margin mặc định */
+    /* padding: 0; /* Loại bỏ padding mặc định */
+
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+        <div style="font-size: 50px;">
+            <h1>CÁC ĐƠN VỊ THƯỜNG GẶP TRONG CSS</h1>
+            <!-- <h2>1. Absolute units - Đơn vị tuyệt đối</h2>
+            <ul>
+                 Điểm ảnh/độ phân giải màn hình
+                    1px của CSS với độ phân giải thấp = 1 điểm ảnh thực ở trên MH
+                    MH độ phân giải cao hơn thì 1px của CSS = nhiều điểm ảnh thực ở trên MH thực
+                
+                <li>px</li>
+                <li>pt</li>
+                <li>cm</li>
+                <li>mm</li>
+                <li>inch</li>
+                <li>pc</li>
+            </ul>
+            <h2>2. Relative units-ĐƠN VỊ TƯƠNG ĐỐI</h2>
+            Nó phụ thuộc vào giá trị của 1 đối tượng khác
+            <ul>
+
+                <li>%</li> - Phụ thuộc vào Body
+                <li>rem</li> - phụ thuộc vào thẻ HTML
+                <li>em</li> - phụ thuộc vào thẻ cha gần nhất chứa nó
+                (em khó kiểm soát hơn rem)
+                v - viewport : độ rộng của trình duyệt
+                <li>vw</li> vw-width
+                <li>vh</li> vh-height
+                <li>vmin</li>
+                <li>vmax</li>
+                <li>ex</li>
+                <li>ch</li>
+              </ul> 
+              thuộc tính width và height, khi đặt theo % sẽ tỉ lệ vào thẻ mà nó phụ thuộc, 
+              mặc định là thẻ cha trực tiếp của nó. 
+              Vì vậy, thẻ cha của nó phải có kích thước cho width hoặc height 
+              thì thẻ con đặt theo % mới có tác dụng.
+            1. Với chiều rộng thì các thẻ như body, div sẽ mặc định có width: 100%
+            2.Với chiều cao, mặc định các thẻ có height: auto, 
+            chiều cao sẽ tự động thay đổi khi nội dung bên trong nó tăng lên. 
+            Nếu thẻ cha có height: auto và thẻ con của nó height: 50% 
+            thì sẽ không có tác dụng, khi ấy thẻ con vẫn có height: auto
+            -->
+            <div class="parent-1">
+                <div class="box-1"> height: auto, chiều cao sẽ tự động thay đổi khi nội dung bên trong nó tăng lên. Nếu thẻ cha có height: auto và thẻ con của nó height: 50% thì sẽ không có tác dụng, khi ấy thẻ con vẫn có height: auto.</div>
+            </div>
+            
+            <div class="parent-2">
+                <div class="box-2">BOX 2</div>
+            </div>
+        </div>
+    </body>
+</html>

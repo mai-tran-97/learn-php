@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>background-origin - cho phép ảnh được đổ từ phần padding hay border</title>
+        <!-- Tương tự background-clip dành cho background-color -->
+        <meta charset="utf-8">
+        <style>
+            .header {
+                width: 500px;
+                height: 500px;
+                border: 10px dashed palevioletred;
+                padding: 20px;
+                box-sizing: border-box;
+                background-image: url(https://vnn-imgs-f.vgcloud.vn/2020/04/02/19/son-heung-min.jpg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-origin: padding-box;
+                /* content-box = vừa với phần content
+                padding-box = vừa với phần padding (đổ từ padding vào)
+                border-box = vừa với phần border (đổ từ lớp border)
+                */
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header"></div>
+    </body>
+</html>

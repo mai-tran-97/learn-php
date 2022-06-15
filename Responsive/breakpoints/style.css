@@ -1,0 +1,36 @@
+body {
+    background-color: orange;
+    display: flex;
+    height: 100vh;
+}
+
+.mobile,
+.tablet,
+.pc {
+    margin: auto;
+    font-size: 100px;
+    color: #fff;
+    display: none;
+}
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.249375em) {
+    .mobile {
+        display: block;
+    }
+}
+
+/* Tablet: width >= 740px and < 1024px  */
+@media screen and (min-width: 46.25em) and (max-width:  63.999375em) {
+    .tablet {
+        display: block;
+    }
+}
+
+/* PC: width >= 1024px */
+@media screen and (min-width: 64em) {
+    .pc {
+        display: block;
+    }
+}
+/* Lưu ý nên sử dụng đơn vị "em", "em" trong Media query ko phụ thuộc vào đối tượng nào */
